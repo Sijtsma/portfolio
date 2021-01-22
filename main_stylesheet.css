@@ -19,6 +19,19 @@ h1, h2, h3, h4, h5, h6 {
     font-family: 'Proza Libre', sans-serif;
 }
 
+/* nav links styling */
+ul.nav li {
+	display: inline-block;
+}
+
+ul.nav a {
+	border-bottom: none;
+}
+
+ul.nav a.pipe::after {
+	content:"|";
+}
+
 footer {
 	position: absolute;
 	left: 0;
