@@ -19,7 +19,25 @@ h1, h2, h3, h4, h5, h6 {
     font-family: 'Proza Libre', sans-serif;
 }
 
-/* nav links styling */
+/* nav styling */
+.logo {
+	display: inline-block;
+	vertical-align: middle;
+	width: 15%;
+  }
+  
+  .logo img {
+	height: 150px;
+	width: 150px;
+  }
+
+  .nav {
+	display: inline-block;
+	vertical-align: middle;
+	width: 83%;
+	text-align: right;
+  }
+
 ul.nav li {
 	display: inline-block;
 }
@@ -50,6 +68,10 @@ a {
 	border-bottom: 3px solid darkgreen;
 	color: #686963;
 	text-decoration: none;
+}
+
+a.logo {
+	border-bottom: none;
 }
 
 a:hover, a:focus, a:active {
