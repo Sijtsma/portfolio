@@ -27,8 +27,8 @@ h1, h2, h3, h4, h5, h6 {
   }
   
   .logo img {
-	height: 150px;
-	width: 150px;
+	height: 200px;
+	width: 350px;
   }
 
   .nav {
@@ -40,14 +40,16 @@ h1, h2, h3, h4, h5, h6 {
 
 ul.nav li {
 	display: inline-block;
+	margin-right: 5%;
 }
 
 ul.nav a {
 	border-bottom: none;
+	color: #686963;
 }
 
-ul.nav a.pipe::after {
-	content:"|";
+ul.nav a.current {
+	border-bottom: 10px solid darkgreen;
 }
 
 footer {
