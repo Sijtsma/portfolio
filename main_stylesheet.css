@@ -105,6 +105,24 @@ table {
     text-align: left; 
   }
 
+  /* skiplink styling */
+  .skiplink a {
+	position: absolute;
+	overflow: hidden;
+	height: 1px;
+	width: 1px;
+	clip: rect(1px, 1px, 1px, 1px);
+	white-space: nowrap;
+	color: #686963;
+  }
+  
+  .skiplink a:focus {
+	position: static;
+	width: auto;
+	height: auto;
+	clip: auto;
+  }
+
   /* 
 Max width before this PARTICULAR table gets nasty
 This query will take effect for any screen smaller than 760px
@@ -113,6 +131,13 @@ and also iPads specifically.
 @media 
 only screen and (max-width: 760px),
 (min-device-width: 768px) and (max-device-width: 1024px)  {
+	.nav {
+		display: inline-block;
+		vertical-align: middle;
+		width: 100%;
+		text-align: center;
+
+	  }
 
 	/* Force table to not be like tables anymore */
 	caption, table, thead, tbody, th, td, tr { 
